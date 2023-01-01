@@ -9,10 +9,4 @@ import { Component, Input } from "@angular/core";
 })
 export class PropertyCardComponent{
 @Input() property: any
-// Property: any = {
-//   "Id": 1,
-//   "Name": "Birla House",
-//   "Type": "House",
-//   "Price": 12000
-// }
 }
