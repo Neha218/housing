@@ -17,14 +17,14 @@ export class PropertyListComponent implements OnInit {
     if(this.route.snapshot.url.toString()){
       this.SellRent = 2;
     }
-    this.housing.getAllProperties(this.SellRent).subscribe(
-      data => {
+    this.housing.getAllProperties(this.SellRent).subscribe({
+      next: (data) => {
         this.properties = data;
       },
-      error => {
+      error: (error) => {
         console.log(error);
       }
-    );
+    });
   }
 
 }
